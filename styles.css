@@ -1,0 +1,173 @@
+body {
+    background: #f5f7fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background 0.4s;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    text-align: center;
+    max-width: 340px;
+    width: 100%;
+    position: relative;
+    transition: background 0.4s, box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    transform: translateY(-2px) scale(1.015);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s, background 0.3s;
+    z-index: 2;
+}
+
+.theme-toggle:hover {
+    color: #ffd700;
+    background: rgba(0,0,0,0.04);
+    border-radius: 50%;
+}
+
+.profile-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffd700;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: border 0.4s;
+}
+
+h3 {
+    margin: 0.5rem 0 0.2rem 0;
+    font-size: 1.5rem;
+    color: #222;
+    transition: color 0.4s;
+}
+
+.title {
+    color: #666;
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+    transition: color 0.4s;
+}
+
+h4 {
+    margin: 0 0 1.2rem 0;
+    color: #888;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: color 0.4s;
+}
+
+.contact-info {
+    margin-bottom: 1rem;
+    font-size: 0.98rem;
+}
+
+.contact-info a {
+    color: #0077b6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 0.5rem;
+}
+
+.social-links a {
+    color: #444;
+    text-decoration: none;
+    margin: 0 0.2rem;
+    font-weight: 500;
+    transition: color 0.2s, transform 0.2s;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: #0077b6;
+    transform: scale(1.15) rotate(-3deg);
+}
+
+/* Dark Theme */
+body.dark {
+    background: #181c24;
+}
+
+body.dark .card {
+    background: #232a36;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.40);
+}
+
+body.dark h3 {
+    color: #f7f7f7;
+}
+
+body.dark .title {
+    color: #b0b8c1;
+}
+
+body.dark h4 {
+    color: #a0a7b4;
+}
+
+body.dark .profile-img {
+    border: 4px solid #00b4d8;
+}
+
+body.dark .contact-info a {
+    color: #90e0ef;
+}
+
+body.dark .social-links a {
+    color: #e0e0e0;
+}
+
+body.dark .social-links a:hover {
+    color: #00b4d8;
+}
+
+body.dark .theme-toggle {
+    color: #ffd700;
+}
+
+@media (max-width: 400px) {
+    .card {
+        padding: 1rem 0.5rem;
+    }
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
